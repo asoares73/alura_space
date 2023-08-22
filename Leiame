@@ -1,0 +1,14 @@
+
+python -m virtualenv venv
+source venv/Scripts/activate
+pip install django==4.1
+django-admin help
+django-admin startproject setup .
+python manage.py runserver
+
+pip install python-dotenv
+
+pip freeze > requirements.txt
+
+git init
+git add .
